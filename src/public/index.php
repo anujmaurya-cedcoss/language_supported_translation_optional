@@ -72,21 +72,7 @@ $container->set(
         );
     }
 );
-// injecting session in container
-//     $container->set(
-//         'session',
-//         function () {
-//             $session = new Manager();
-//             $files = new Stream(
-//                 [
-//                 'savePath' => '/tmp',
-//                 ]
-//             );
-//             $session->setAdapter($files);
-//         $session->start();
-//         return $session;
-//     }
-// );
+
 // cache
 $container->set(
     'cache',
